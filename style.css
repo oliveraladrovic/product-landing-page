@@ -1,0 +1,15 @@
+main * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-img {
+  width: 140px;
+  display: block;
+}
