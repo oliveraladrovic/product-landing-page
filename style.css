@@ -97,13 +97,76 @@ h3 {
   line-height: 1.5em;
 }
 #contact {
-  padding-top: 80px;
   text-align: center;
+  max-width: 1250px;
+  width: 100%;
+  margin: 80px auto 50px auto;
+  padding: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: blue;
+  color: white;
+  font-size: 150%;
+  border-radius: 20px;
+}
+#left {
+  width: 55%;
+  align-self: center;
+}
+#right {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#email {
+  font-size: 90%;
+  color: #3b5f8e;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+}
+#email:focus {
+  outline: none;
+}
+#submit {
+  font-size: 90%;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3b5f8e;
+}
+#submit:hover {
+  background-color: #6994c5;
+  cursor: pointer;
 }
 
 footer {
   margin-top: 200px;
   text-align: center;
+}
+
+@media (max-width: 1181px) {
+  #email,
+  #submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 80%;
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #left {
+    width: 100%;
+    padding: 15px;
+  }
+  #right {
+    width: 100%;
+  }
 }
 
 @media (max-width: 470px) {
